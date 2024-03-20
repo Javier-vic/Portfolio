@@ -34,14 +34,14 @@ body{
 
 #photo-laravel {
     position: absolute;
-    top: 60%;
+    top: 48%;
     left: 75%;
     width: 20%
 }
 
 #photo-php {
     position: absolute;
-    top: 45%;
+    top: 40%;
     left: 85%;
     width: 6%
 }
@@ -55,7 +55,7 @@ body{
 
 #photo-csharp {
     position: absolute;
-    top: 58%;
+    top: 50%;
     left: 58%;
     width: 10%
 }
@@ -64,35 +64,35 @@ body{
 @media only screen and (max-width: 992px) {
     #photo-net {
         position: absolute;
-        top: 17%;
+        top: 14%;
         left: 48%;
         width: 5%
     }
 
     #photo-laravel {
         position: absolute;
-        top: 19%;
+        top: 16%;
         left: 57%;
         width: 10%
     }
 
     #photo-php {
         position: absolute;
-        top: 19%;
+        top: 16%;
         left: 70%;
         width: 5%
     }
 
     #photo-js {
         position: absolute;
-        top: 17%;
+        top: 14%;
         left: 38%;
         width: 5%
     }
 
     #photo-csharp {
         position: absolute;
-        top: 15%;
+        top: 12%;
         left: 28%;
         width: 8%
     }
