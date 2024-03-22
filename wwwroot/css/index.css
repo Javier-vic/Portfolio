@@ -60,6 +60,24 @@ body{
     width: 10%
 }
 
+.experience-card {
+    border: 2px solid var(--main-color);
+    border-radius: 25px;
+}
+
+.experience-button {
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    padding: 4px;
+    border-radius: 30% 30% 0 0;
+    width: 10vw;
+}
+
+.experience-selected {
+    background-color: var(--main-color);
+    font-weight: bold;
+    color: var(--text-color);
+}
 
 @media only screen and (max-width: 992px) {
     #photo-net {

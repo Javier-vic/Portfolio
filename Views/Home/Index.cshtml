@@ -1,7 +1,7 @@
 ﻿@{
     ViewData["Title"] = "Javier Victoriano";
 }
-<div class="presentacion py-5">
+<div class="presentacion py-5 mb-2">
     <div class="row">
         <div class="text-center col-lg-7 p-4 col-sm-12">
             <h1 class="display-4 text-color">Hola, soy Javier,</h1>
@@ -19,7 +19,33 @@
             <img src="/images/presentacion/photo-csharp.png" alt="c# photo" id="photo-csharp" />
             <img src="/images/presentacion/photo-js.png" alt="js photo" id="photo-js" />
         </div>
+    </div>  
+</div>
+
+<div class="px-5 my-5">
+    <div class="w-75 mx-auto">
+        <h1 class="main-color text-center mb-4">Experiencia</h1>
+        <div class="text-center">
+            <div class="btn-group" role="group" aria-label="Opciones">
+                <button type="button" class=" experience-button text-color experience-selected" id="experience-drup" onclick="experienceButton('experience-drup')">Drup</button>
+                <button type="button" class=" experience-button text-color" id="experience-ramen" onclick="experienceButton('experience-ramen')">Ramen Dashi</button>
+                <button type="button" class=" experience-button text-color" id="experience-landes" onclick="experienceButton('experience-landes')">Landes</button>
+            </div>
+        </div>
+        <div class="experience-card">          
+            <div class="p-5">
+                <p class="text-color experience-text experience-drup">
+                    Encabecé el diseño e implementación de un sistema de gestión para empresas de reserva de propiedades inmobiliarias, optimizando la estructura de la base de datos para soportar futuras funcionalidades. Colaboré activamente en proyectos adicionales, brindando apoyo crucial para cumplir con fechas de entrega y rescaté un sistema abandonado, reduciendo errores en un 85%.
+                </p>
+                <p class="text-color experience-text experience-ramen d-none">
+                    Diseñé y desplegué una base de datos optimizada para la gestión eficiente de la información operativa, garantizando un flujo estructurado de datos esenciales para las operaciones. Creé mockups web que capturaron la esencia de la marca, resultando atractivos y coherentes para usuarios y empleados. Además, integré un CMS en el sitio web, permitiendo a los propietarios gestionar el contenido de manera autónoma y simplificando las actualizaciones del sitio.
+                </p>
+                <p class="text-color experience-text experience-landes d-none">
+                    Desarrollé un sistema eficiente de recolección de datos hacia un data lake, simplificando su acceso y utilización en un 80%. Diseñé un algoritmo de inteligencia artificial con una precisión del 95% para extraer datos de informes PDF y almacenarlos en Dataverse, reduciendo errores en un 99%. Además, creé un panel de control personalizado en Power BI que optimizó la generación de informes, ahorrando más de 3 horas de trabajo diarias.
+                </p>
+            </div>
+        </div>
     </div>
-    
+
 </div>
 
