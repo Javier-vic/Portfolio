@@ -1,0 +1,43 @@
+# Archivos generados por Visual Studio
+*.obj
+*.pdb
+*.user
+*.suo
+*.cache
+*.vspscc
+*.vsp
+*_i.c
+*_p.c
+*.ncb
+*.sdf
+*.opensdf
+*.cachefile
+*.VC.db
+*.sln.docstates
+
+# Carpeta de binarios de build
+bin/
+obj/
+
+# Dependencias de NuGet
+packages/
+
+# Archivos de compilación de Roslyn
+*.cache
+*.csproj.nuget.cache
+*.csproj.nuget.g.props
+*.csproj.nuget.g.targets
+
+# SDK de estilo
+**/bin/
+**/obj/
+**/out/
+**/Debug/
+**/Release/
+**/*.dll
+**/*.exe
+
+# Comentarios de GitHub
+*.sourcelink.json
+*.AssemblyInfoInputs.cache
+*.staticwebassets.pack.json
