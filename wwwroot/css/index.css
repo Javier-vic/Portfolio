@@ -81,6 +81,32 @@ body{
     color: var(--text-color);
 }
 
+.project-card {
+    background-color: var(--second-bg-color);
+    box-shadow: 10px 5px var(--main-color);
+    border-radius: 25px;
+    height: 50vh;
+}
+
+.project-photo{
+    background-color: gray;   
+}
+
+.project-button {
+    border: 2px solid var(--main-color);
+    color: var(--text-color);
+    padding: 4px;
+    font-weight: bold;
+    width: 8vw;
+}
+
+.project-button:hover, .experience-button:hover  {
+    background-color: var(--main-color);   
+    color: var(--text-color);
+}
+
+
+
 @media only screen and (max-width: 992px) {
     #photo-net {
         position: relative;
