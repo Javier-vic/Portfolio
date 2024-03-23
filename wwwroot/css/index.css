@@ -64,11 +64,12 @@ body{
 .experience-card {
     border: 2px solid var(--main-color);
     border-radius: 25px;
+    background-color: var(--second-bg-color);
 }
 
 .experience-button {
     border: 2px solid var(--main-color);
-    background-color: var(--bg-color);
+    background-color: var(--second-bg-color);
     padding: 4px;
     border-radius: 30% 30% 0 0;
     width: 10vw;
