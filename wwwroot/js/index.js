@@ -19,3 +19,21 @@ function experienceButton(id) {
     });
     text.classList.remove('d-none');
 }
+
+function copyEmail() {
+    const copyText = 'javier.victorianor@gmail.com';  // Aquí puedes poner el texto que deseas copiar
+
+    const textarea = document.createElement('textarea');
+    textarea.value = copyText;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textarea);
+
+    const copyNotification = document.getElementById('copyNotification');
+    copyNotification.style.display = 'inline-block';
+    setTimeout(function() {
+        copyNotification.style.display = 'none';
+    }, 2000);
+
+}

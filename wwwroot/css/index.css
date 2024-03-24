@@ -61,7 +61,7 @@ body{
     width: 30%
 }
 
-.experience-card {
+.experience-card, .contact-card {
     border: 2px solid var(--main-color);
     border-radius: 25px;
     background-color: var(--second-bg-color);
@@ -105,7 +105,19 @@ body{
     color: var(--text-color);
 }
 
+.contact-icon:hover{
+    color: var(--main-color);
+}
 
+.copy-notification {
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    display: none;
+}
 
 @media only screen and (max-width: 992px) {
     #photo-net {
