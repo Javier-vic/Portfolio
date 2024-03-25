@@ -85,7 +85,7 @@ body{
     background-color: var(--second-bg-color);
     box-shadow: 10px 5px var(--main-color);
     border-radius: 25px;
-    height: 50vh;
+    height: 400px;
 }
 
 .project-photo{
@@ -97,7 +97,7 @@ body{
     color: var(--text-color);
     padding: 4px;
     font-weight: bold;
-    width: 8vw;
+    width: 100px;
 }
 
 .project-button:hover, .experience-button:hover  {
@@ -154,5 +154,4 @@ body{
         left: 95%;
         width: 15%
     }
-
 }
