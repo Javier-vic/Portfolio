@@ -1,8 +1,33 @@
-$(document).ready(function () {
-    console.log('El DOM está listo.');
 
+document.addEventListener("DOMContentLoaded", function () {
+    const navbarHeight = document.querySelector('.fixed-nav').offsetHeight;
+    document.body.style.marginTop = navbarHeight + 'px';
+    navEffect();
 });
 
+function navEffect() {
+    document.addEventListener("scroll", function () {
+        var scrollPosition = window.scrollY;
+        var experiencePosition = document.getElementById("experience").offsetTop;
+        var projectsPosition = document.getElementById("projects").offsetTop;
+        var contactPosition = document.getElementById("contact").offsetTop;
+        var experienceLink = document.querySelector('a[href="#experience"]');
+        var projectsLink = document.querySelector('a[href="#projects"]');
+        var contactLink = document.querySelector('a[href="#contact"]');
+
+        experienceLink.classList.remove("active");
+        projectsLink.classList.remove("active");
+        contactLink.classList.remove("active");
+
+        if (scrollPosition < projectsPosition) {
+            experienceLink.classList.add("active");
+        } else if (scrollPosition >= projectsPosition && scrollPosition < contactPosition) {
+            projectsLink.classList.add("active");
+        } else {
+            contactLink.classList.add("active");
+        }
+    });
+}
 
 function experienceButton(id) {
     var button = document.getElementById(id);
