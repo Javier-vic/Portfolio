@@ -112,10 +112,21 @@ nav {
     box-shadow: 10px 5px var(--main-color);
     border-radius: 25px;
     height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
 }
 
 .project-photo{
     background-color: gray;   
+}
+
+.project-text {
+    flex-grow: 1; /* Permitir que el contenido de texto crezca si es necesario */
+}
+
+.button-container {
+    margin-top: auto; /* Empujar el contenedor de botones hacia abajo */
 }
 
 .project-button {
