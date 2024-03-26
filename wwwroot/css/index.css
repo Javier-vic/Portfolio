@@ -21,7 +21,7 @@ nav {
 }
 
 .navbar-brand, .main-color{
-    color: var(--main-color);
+    color: var(--main-color) !important;
 }
 
 .navbar-brand:hover{
