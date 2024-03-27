@@ -5,6 +5,10 @@
     --text-color: #DAD6D6;
 }
 
+body {
+    overflow-x: hidden; /* Eliminar desplazamiento horizontal */
+}
+
 body, nav{
     background-color: var(--bg-color);
 }
@@ -29,8 +33,12 @@ nav {
     font-weight: bold;
 }
 
-.nav-link, .text-color{
-    color: var(--text-color) !important;
+.nav-link {
+    color: var(--text-color) !important; 
+}
+
+.text-color{
+    color: var(--text-color);
 }
 
 .navbar-nav .nav-item .nav-link.active {
@@ -129,7 +137,7 @@ nav {
     margin-top: auto; /* Empujar el contenedor de botones hacia abajo */
 }
 
-.project-button {
+.project-button, .contact-cv {
     border: 2px solid var(--main-color);
     color: var(--text-color);
     padding: 4px;
@@ -137,12 +145,12 @@ nav {
     width: 100px;
 }
 
-.project-button:hover, .experience-button:hover  {
+.project-button:hover, .experience-button:hover, .contact-cv:hover {
     background-color: var(--main-color);   
     color: var(--text-color);
 }
 
-.contact-icon:hover{
+.contact-icon:hover, .presentation-contact:hover{
     color: var(--main-color);
 }
 
