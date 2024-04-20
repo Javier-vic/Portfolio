@@ -9,7 +9,7 @@ body {
     overflow-x: hidden;
 }
 
-body, nav{
+body, nav, .modal-content{
     background-color: var(--bg-color);
 }
 
@@ -95,7 +95,7 @@ nav {
     width: 20%
 }
 
-.experience-card, .contact-card {
+.experience-card, .contact-card, .modal-content {
     border: 2px solid var(--main-color);
     border-radius: 25px;
     background-color: var(--second-bg-color);
@@ -144,6 +144,14 @@ nav {
     margin-top: auto;
 }
 
+.close-button {
+    border: 2px solid var(--main-color);
+    color: var(--text-color);
+    padding: 4px;
+    font-weight: bold;
+    width: 40px;
+}
+
 .project-button, .contact-cv {
     border: 2px solid var(--main-color);
     color: var(--text-color);
@@ -152,7 +160,7 @@ nav {
     width: 100px;
 }
 
-.project-button:hover, .experience-button:hover, .contact-cv:hover {
+.project-button:hover, .experience-button:hover, .contact-cv:hover, .close-button:hover {
     background-color: var(--main-color);   
     color: var(--text-color);
 }

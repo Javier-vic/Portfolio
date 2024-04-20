@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const navbarHeight = document.querySelector('.fixed-nav').offsetHeight;
     document.body.style.marginTop = navbarHeight + 'px';
     navEffect();
+    $("#exampleModal").modal("show");
+    projectModal();
 });
 
 function navEffect() {
@@ -61,4 +63,32 @@ function copyEmail() {
         copyNotification.style.display = 'none';
     }, 2000);
 
+}
+
+function projectModal() {
+    const cards = {
+        portfolio: {
+            title: "Título 1",
+            body: "Contenido 1"
+        },
+        card2: {
+            title: "Título 2",
+            body: "Contenido 2"
+        },
+    };
+
+    const cardButtons = document.querySelectorAll(".project-modal");
+
+    cardButtons.forEach(button => {
+        button.addEventListener("click", function () {
+            const cardId = button.getAttribute("data-card-id");
+            const modalTitle = document.getElementById("modalTitle");
+            const modalBody = document.getElementById("modalBody");
+
+            modalTitle.textContent = cards[cardId].title;
+            modalBody.textContent = cards[cardId].body;
+
+            $("#exampleModal").modal("show");
+        });
+    });
 }
