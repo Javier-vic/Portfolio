@@ -81,6 +81,13 @@ function projectModal() {
             github: "no",
             live: "no"
         },
+        manquimavida: {
+            title: "Manquimavida",
+            body: "Sistema desarrollado en Laravel 8 para optimizar la administraci\u00F3n integral de los moteles Manquimavida, abarcando desde la gesti\u00F3n de trabajadores hasta el control de arriendos y ventas de servicios adicionales.",
+            photo: "images/proyectos/manquimavida.png",
+            github: "no",
+            live: "no"
+        },
     };
 
     const closeButton = document.getElementById("closeButton");
