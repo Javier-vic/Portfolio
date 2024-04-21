@@ -70,12 +70,16 @@ function projectModal() {
         portfolio: {
             title: "Portfolio",
             body: "Portafolio desarrollado con ASP.NET Core para destacar mi experiencia y habilidades como desarrollador web",
+            photo: "images/proyectos/portfolio.png",
             github: "https://github.com/Javier-vic/Portfolio",
             live: "no"
         },
-        card2: {
-            title: "Título 2",
-            body: "Contenido 2"
+        reservas: {
+            title: "Reservas",
+            body: "Sistema desarrollado con Laravel 8 para simplificar la gesti\u00F3n del arriendo de diversos tipos de inmuebles, desde habitaciones hasta canchas.",
+            photo: "images/proyectos/reservas.png",
+            github: "no",
+            live: "no"
         },
     };
 
@@ -92,6 +96,8 @@ function projectModal() {
             const modalBody = document.getElementById("modalBody");
             const githubLink = document.getElementById("modalGithub");
             const liveLink = document.getElementById("modalLive");
+            const modalPhoto = document.getElementById("modalPhoto");
+            modalPhoto.src = cards[cardId].photo;
             modalTitle.textContent = cards[cardId].title;
             modalBody.textContent = cards[cardId].body;
             if (cards[cardId].github != "no") {               
