@@ -68,8 +68,10 @@ function copyEmail() {
 function projectModal() {
     const cards = {
         portfolio: {
-            title: "Título 1",
-            body: "Contenido 1"
+            title: "Portfolio",
+            body: "Portafolio desarrollado con ASP.NET Core para destacar mi experiencia y habilidades como desarrollador web",
+            github: "https://github.com/Javier-vic/Portfolio",
+            live: "no"
         },
         card2: {
             title: "Título 2",
@@ -77,18 +79,36 @@ function projectModal() {
         },
     };
 
-    const cardButtons = document.querySelectorAll(".project-modal");
+    const closeButton = document.getElementById("closeButton");
+    closeButton.addEventListener("click", function () {
+        $("#projectModal").modal("hide");
+    })
 
+    const cardButtons = document.querySelectorAll(".project-modal");
     cardButtons.forEach(button => {
         button.addEventListener("click", function () {
             const cardId = button.getAttribute("data-card-id");
             const modalTitle = document.getElementById("modalTitle");
             const modalBody = document.getElementById("modalBody");
-
+            const githubLink = document.getElementById("modalGithub");
+            const liveLink = document.getElementById("modalLive");
             modalTitle.textContent = cards[cardId].title;
             modalBody.textContent = cards[cardId].body;
+            if (cards[cardId].github != "no") {               
+                githubLink.classList.remove("d-none");
+                githubLink.href = cards[cardId].github;
+            } else {
+                githubLink.classList.add("d-none");
+            }
 
-            $("#exampleModal").modal("show");
+            if (cards[cardId].live != "no") {                
+                liveLink.classList.remove("d-none");
+                liveLink.href = cards[cardId].github;
+            } else {
+                liveLink.classList.add("d-none");
+            }
+
+            $("#projectModal").modal("show");
         });
     });
 }
