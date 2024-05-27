@@ -88,6 +88,13 @@ function projectModal() {
             github: "no",
             live: "no"
         },
+        calories: {
+            title: "Calculadora de calorías",
+            body: "SPA para calcular un estimado del consumo de calor\u00EDas diarias utilizando React.js y React-router-dom",
+            photo: "images/proyectos/calories.png",
+            github: "https://github.com/Javier-vic/Calories",
+            live: "https://javiervictoriano.com/calories/"
+        },
     };
 
     const closeButton = document.getElementById("closeButton");
@@ -116,7 +123,7 @@ function projectModal() {
 
             if (cards[cardId].live != "no") {                
                 liveLink.classList.remove("d-none");
-                liveLink.href = cards[cardId].github;
+                liveLink.href = cards[cardId].live;
             } else {
                 liveLink.classList.add("d-none");
             }
