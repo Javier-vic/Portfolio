@@ -125,6 +125,14 @@ nav {
     justify-content: space-between; 
 }
 
+.badge-live{
+    background-color: var(--main-color);
+}
+
+.badge-github {
+    background-color: #6e5494;
+}
+
 .project-photo{
     position: relative; 
     overflow: hidden; 
