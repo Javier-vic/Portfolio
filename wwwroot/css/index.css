@@ -60,7 +60,7 @@ nav {
     max-width: 50%;
 }
 
-#photo-net{
+#photo-react {
     position: relative;
     top: 0%;
     left: -30%;
@@ -88,7 +88,7 @@ nav {
     width: 10%
 }
 
-#photo-csharp {
+#photo-net {
     position: relative;
     top: 75%;
     left: -70%;
@@ -185,7 +185,7 @@ nav {
     border-color: var(--text-color);
 }
 @media only screen and (max-width: 1800px) {
-    #photo-net {
+    #photo-react {
         position: relative;
         top: 0%;
         left: -10%;
@@ -213,7 +213,7 @@ nav {
         width: 15%
     }
 
-    #photo-csharp {
+    #photo-net {
         position: relative;
         top: 5%;
         left: 5%;
@@ -221,7 +221,7 @@ nav {
     }
 }
 @media only screen and (max-width: 992px) {
-    #photo-net {
+    #photo-react {
         position: relative;
         top: 0%;
         left: 75%;
@@ -242,7 +242,7 @@ nav {
         width: 15%
     }
 
-    #photo-csharp {
+    #photo-net {
         position: relative;
         top: 0%;
         left: 90%;
