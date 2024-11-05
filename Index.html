@@ -1,0 +1,212 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/site.css" />
+    <!-- <link rel="stylesheet" href="~/Portfolio.styles.css" /> -->
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm fixed-nav px-5">
+            <div class="container-fluid">
+                <a class="navbar-brand" >Javier Victoriano</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-solid fa-bars text-color"></i>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1 justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link mx-4 text-color" href="#experience">Experiencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-4" href="#projects">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-4" href="#contact">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="">
+        <main role="main" class="pb-3">
+            <div class="presentation py-5 mb-2">
+                <div class="row">
+                    <div class="text-center col-lg-7 p-4 col-sm-12">
+                        <h1 class="display-4 text-color">Hola, soy Javier,</h1>
+                        <h1 class="main-color">Desarrollador Web</h1>
+                        <p class="text-color presentation-text mx-auto">Soy un Ingeniero Civil en informática de la Universidad Católica de la Santísima Concepción con experiencia en el desarrollo full stack utilizando frameworks como ASP.NET CORE y Laravel</p>
+                        <div>
+                            <a href="https://www.linkedin.com/in/javier-victoriano/"><i class="fa fa-brands fa-linkedin text-color m-1 h2 presentation-contact"></i></a>
+                            <a href="https://github.com/Javier-vic"><i class="fa fa-brands fa-github text-color m-1 h2 presentation-contact"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-5 presentation-photos">
+                        <img src="/images/presentacion/photo-react.png" alt="c# photo" id="photo-react" />            
+                        <img src="/images/presentacion/photo-laravel.png" alt="laravel photo" id="photo-laravel" />
+                        <img src="/images/presentacion/photo-php.png" alt="php photo" id="photo-php" />
+                        <img src="/images/presentacion/photo-net.png" alt=".net photo" id="photo-net" />
+                        <img src="/images/presentacion/photo-js.png" alt="js photo" id="photo-js" />
+                    </div>
+                </div>  
+            </div>
+
+            <div id="experience" class="px-5 my-5 pt-5">
+                <div class="w-75 mx-auto">
+                    <h1 class="main-color text-center mb-4">Experiencia</h1>
+                    <div class="text-center">
+                        <div class="btn-group" role="group" aria-label="Opciones">
+                            <button type="button" class=" experience-button experience-top text-color experience-selected" id="experience-drup" onclick="experienceButton('experience-drup')">Drup</button>
+                            <button type="button" class=" experience-button text-color" id="experience-ramen" onclick="experienceButton('experience-ramen')">Ramen Dashi</button>
+                            <button type="button" class=" experience-button text-color" id="experience-landes" onclick="experienceButton('experience-landes')">Landes</button>
+                        </div>
+                    </div>
+                    <div class="experience-card">          
+                        <div class="p-5">
+                            <p class="text-color experience-text experience-drup">
+                                Encabecé el diseño e implementación de un sistema de gestión para empresas de reserva de propiedades inmobiliarias, optimizando la estructura de la base de datos para soportar futuras funcionalidades. Colaboré activamente en proyectos adicionales, brindando apoyo crucial para cumplir con fechas de entrega y rescaté un sistema abandonado, reduciendo errores en un 85%.
+                            </p>
+                            <p class="text-color experience-text experience-ramen d-none">
+                                Diseñé y desplegué una base de datos optimizada para la gestión eficiente de la información operativa, garantizando un flujo estructurado de datos esenciales para las operaciones. Creé mockups web que capturaron la esencia de la marca, resultando atractivos y coherentes para usuarios y empleados. Además, integré un CMS en el sitio web, permitiendo a los propietarios gestionar el contenido de manera autónoma y simplificando las actualizaciones del sitio.
+                            </p>
+                            <p class="text-color experience-text experience-landes d-none">
+                                Desarrollé un sistema eficiente de recolección de datos hacia un data lake, simplificando su acceso y utilización en un 80%. Diseñé un algoritmo de inteligencia artificial con una precisión del 95% para extraer datos de informes PDF y almacenarlos en Dataverse, reduciendo errores en un 99%. Además, creé un panel de control personalizado en Power BI que optimizó la generación de informes, ahorrando más de 3 horas de trabajo diarias.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content ">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-color" id="modalTitle"></h5>
+                            <a id="closeButton" class="btn close-button" data-dismiss="modal"><span aria-hidden="true">&times;</span></a>
+                        </div>
+                        <div class="modal-body">
+                            <img id="modalPhoto" class="w-100" src="" alt="Alternate Text" />
+                            <div class="text-color my-2" id="modalBody">
+                            </div>
+                            <div class="text-center button-container">
+                                <a id="modalGithub" class="btn project-button"><i class="fa fa-brands fa-github text-white m-1 "></i><span class="project-github-text">GitHub</span></a>
+                                <a id="modalLive" class="btn project-button"><i class="fa fa-solid fa-wifi text-white m-1 "></i><span class="">Live</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="projects" class="px-5 my-5 py-5">
+                <div class="w-75 mx-auto">
+                    <h1 class="main-color text-center mb-4">Proyectos</h1>
+                    <div class="row">
+                        <div class="col-12 col-lg-5 mx-auto project-card my-3 p-3">
+                            <div class="project-photo h-50 rounded m-3">
+                                <img src="images/proyectos/calories.png" alt="Alternate Text" />
+                            </div>
+                            <div class="project-text px-3">
+                                <span class="badge rounded-pill badge-live">Live</span>
+                                <span class="badge rounded-pill badge-github">Github</span>
+                                <h3 class="main-color text-center">Calculadora de calorías</h3>
+                                <p class="text-color">
+                                    SPA desarrollado en React.js.
+                                </p>
+                            </div>
+                            <div class="text-center button-container">
+                                <a class="btn project-button project-modal" data-card-id="calories">Ver más</a>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-5 mx-auto project-card my-3 p-3">
+                            <div class="project-photo h-50 rounded m-3">
+                                <img src="images/proyectos/portfolio.png" alt="Alternate Text" />
+                            </div> 
+                            <div class="project-text px-3">
+                                <span class="badge rounded-pill badge-github">Github</span>
+                                <h3 class="main-color text-center">Portfolio</h3>
+                                <p class="text-color">
+                                    Portfolio web desarrollado utilizando el framework ASP.NET CORE.
+                                </p>
+                            </div>
+                            <div class="text-center button-container">
+                                <a class="btn project-button project-modal" data-card-id="portfolio">Ver más</a>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-5 mx-auto project-card my-3 p-3">
+                            <div class="project-photo h-50 rounded m-3">
+                                <img src="images/proyectos/reservas.png" alt="Alternate Text" />
+                            </div>
+                            <div class="project-text px-3">
+                                <h3 class="main-color text-center">Aplicación de reservas</h3>
+                                <p class="text-color">
+                                    Sistema de reserva de inmuebles.
+                                </p>
+                            </div>
+                            <div class="text-center button-container">
+                                <a class="btn project-button project-modal" data-card-id="reservas">Ver más</a>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-5 mx-auto project-card my-3 p-3">
+                            <div class="project-photo h-50 rounded m-3">
+                                <img src="images/proyectos/manquimavida.png" alt="Alternate Text" />
+                            </div>
+                            <div class="project-text px-3">
+                                <h3 class="main-color text-center">Manquimavida</h3>
+                                <p class="text-color">
+                                    Sistema de gestión de moteles Manquimavida.
+                                </p>
+                            </div>
+                            <div class="text-center button-container">
+                                <a class="btn project-button project-modal" data-card-id="manquimavida">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contact" class="px-4 my-5 py-5">
+                <div class="w-75 mx-auto contact-card text-center p-5">
+                    <h1 class="main-color mb-4">Contacto</h1>
+                    <h4 class="text-color mb-5">Si estás interesado en mi trabajo, tienes alguna oportunidad laboral o simplemente quieres conocer más sobre mí, ¡me encantaría escuchar de ti! Estoy abierto a nuevas oportunidades y colaboraciones.</h4>
+                    <div>
+                        <a href="https://www.linkedin.com/in/javier-victoriano/"><i class="contact-icon fa fa-brands text-color fa-linkedin m-1 h2"></i></a>
+                        <a href="https://github.com/Javier-vic"><i class="contact-icon fa fa-brands fa-github text-color m-1 h2"></i></a>
+                        <a href="#" onclick="copyEmail(); return false;"><i class="contact-icon fa fa-regular fa-envelope text-color m-1 h2"></i></a>
+                        <span id="copyNotification" class="copy-notification">Email Copiado!</span>         
+                    </div>
+                    <div>
+                        <h3 class="main-color mt-4">CV</h3>
+                        <div class="mt-3">
+                            <a href="/cv/Curriculum-es.pdf" download class="btn contact-cv">Español</a>
+                            <a href="/cv/Curriculum-en.pdf" download class="btn contact-cv">English</a>
+                        </div>       
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer class="footer text-muted">
+        <div class="container text-center">
+            Desarrollado por <a href="https://www.linkedin.com/in/javier-victoriano/" class="main-color">Javier Victoriano</a>
+        </div>
+    </footer>
+    <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/site.js" ></script>
+    <script src="js/index.js" ></script>
+    <script src="https://kit.fontawesome.com/fce84a355b.js" crossorigin="anonymous"></script>
+</body>
+</html>
