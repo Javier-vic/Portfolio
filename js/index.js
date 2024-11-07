@@ -48,7 +48,7 @@ function experienceButton(id) {
 }
 
 function copyEmail() {
-    const copyText = 'javier.victorianor@gmail.com';  // Aquí puedes poner el texto que deseas copiar
+    const copyText = 'javier.victorianor@gmail.com';  // Aquï¿½ puedes poner el texto que deseas copiar
 
     const textarea = document.createElement('textarea');
     textarea.value = copyText;
@@ -69,7 +69,7 @@ function projectModal() {
     const cards = {
         portfolio: {
             title: "Portfolio",
-            body: "Portafolio desarrollado con ASP.NET Core para destacar mi experiencia y habilidades como desarrollador web",
+            body: "Portafolio desarrollado con Html, CSS y Javascript para destacar mi experiencia y habilidades con las herramientas basicas en desarrollo web",
             photo: "images/proyectos/portfolio.png",
             github: "https://github.com/Javier-vic/Portfolio",
             live: "no"
@@ -89,7 +89,7 @@ function projectModal() {
             live: "no"
         },
         calories: {
-            title: "Calculadora de calorías",
+            title: "Calculadora de calorï¿½as",
             body: "SPA para calcular un estimado del consumo de calor\u00EDas diarias utilizando React.js y React-router-dom",
             photo: "images/proyectos/calories.png",
             github: "https://github.com/Javier-vic/Calories",
