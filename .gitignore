@@ -1,43 +1,51 @@
-# Archivos generados por Visual Studio
-*.obj
-*.pdb
-*.user
-*.suo
-*.cache
-*.vspscc
-*.vsp
-*_i.c
-*_p.c
-*.ncb
-*.sdf
-*.opensdf
-*.cachefile
-*.VC.db
-*.sln.docstates
+# Compiled output
+/dist
+/tmp
+/out-tsc
+/bazel-out
 
-# Carpeta de binarios de build
-bin/
-obj/
+# Dependencies
+/node_modules
 
-# Dependencias de NuGet
-packages/
+# Logs
+*.log
+npm-debug.log
+yarn-error.log
 
-# Archivos de compilación de Roslyn
-*.cache
-*.csproj.nuget.cache
-*.csproj.nuget.g.props
-*.csproj.nuget.g.targets
+# Environment files
+.env
+.env.*
+!.env.example
 
-# SDK de estilo
-**/bin/
-**/obj/
-**/out/
-**/Debug/
-**/Release/
-**/*.dll
-**/*.exe
+# IDEs and editors
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
 
-# Comentarios de GitHub
-*.sourcelink.json
-*.AssemblyInfoInputs.cache
-*.staticwebassets.pack.json
+# Visual Studio Code
+.vscode
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/mcp.json
+.history/*
+
+# Miscellaneous
+/.angular/cache
+.sass-cache/
+/connect.lock
+/coverage
+/libpeerconnection.log
+/testem.log
+/typings
+__screenshots__/
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
