@@ -1,0 +1,11 @@
+{
+  "nav": {
+    "about": "Sobre mí",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "subtitle": "Desarrollador Fullstack",
+    "cta": "Contacto"
+  }
+}
