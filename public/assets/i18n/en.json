@@ -6,6 +6,7 @@
   },
   "hero": {
     "subtitle": "Fullstack Developer",
-    "cta": "Contact"
+    "cta": "Contact",
+    "description": "Hi! I'm Javier Victoriano, a computer systems engineer. I specialize in backend development with Spring Boot, with prior experience in Laravel and .NET, and I'm comfortable on the frontend with Angular and React to bring my projects together end to end."
   }
 }

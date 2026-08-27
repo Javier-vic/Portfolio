@@ -6,6 +6,7 @@
   },
   "hero": {
     "subtitle": "Desarrollador Fullstack",
-    "cta": "Contacto"
+    "cta": "Contacto",
+    "description": "Hola! Soy Javier Victoriano, ingeniero civil en informática. Me especializo en desarrollo backend con Spring Boot, con experiencia previa en Laravel y .NET, y me muevo cómodo en el frontend con Angular y React para dar forma completa a mis proyectos."
   }
 }
