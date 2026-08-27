@@ -1,0 +1,36 @@
+<header class="header">
+  <div class="header__container">
+    <a href="#hero" class="header__logo">Javier Victoriano</a>
+
+    <nav class="header__nav" [class.header__nav--open]="menuOpen">
+      <a href="#experience" class="header__link" (click)="closeMenu()">
+        {{ 'nav.experience' | translate }}
+      </a>
+      <a href="#projects" class="header__link" (click)="closeMenu()">
+        {{ 'nav.projects' | translate }}
+      </a>
+      <a href="#about" class="header__link" (click)="closeMenu()">
+        {{ 'nav.about' | translate }}
+      </a>
+      <a href="#contact" class="header__link" (click)="closeMenu()">
+        {{ 'nav.contact' | translate }}
+      </a>
+    </nav>
+
+    <div class="header__actions">
+      <button class="header__lang-btn" (click)="languageService.toggleLang()">
+        {{ languageService.currentLang() === 'es' ? '🇬🇧 EN' : '🇪🇸 ES' }}
+      </button>
+
+      <button
+        class="header__menu-toggle"
+        [class.header__menu-toggle--active]="menuOpen"
+        (click)="toggleMenu()"
+        aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>

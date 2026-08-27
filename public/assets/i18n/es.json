@@ -1,7 +1,8 @@
 {
   "nav": {
-    "about": "Sobre mí",
+    "experience": "Experiencia",
     "projects": "Proyectos",
+    "about": "Sobre mí",
     "contact": "Contacto"
   },
   "hero": {
