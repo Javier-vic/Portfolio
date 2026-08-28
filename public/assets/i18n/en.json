@@ -9,5 +9,23 @@
     "subtitle": "Fullstack Developer",
     "cta": "Contact",
     "description": "Hi! I'm Javier Victoriano, a computer systems engineer. I specialize in backend development with Spring Boot, with prior experience in Laravel and .NET, and I'm comfortable on the frontend with Angular and React to bring my projects together end to end."
+  },
+  "experience": {
+    "heading": "Experience"
+  },  
+  "exp1": {
+    "role": "Forensic Analyst",
+    "company": "Policia de Investigaciones (PDI)",
+    "description": "Gathered and documented requirements with business users to design an evidence logistics management solution. Built features with C#, .NET, Angular and SQL Server, contributing to database design and internal process optimization, with fully traceable functional and technical documentation."
+  },
+  "exp2": {
+    "role": "Fullstack Developer",
+    "company": "Drup SpA",
+    "description": "Led development of an enterprise system, owning architecture, backend, frontend and service integration with PHP, Laravel, JavaScript and REST APIs. Took over a previously abandoned system and brought it to production, cutting operational errors by 85%."
+  },
+  "exp3": {
+    "role": "Data Engineer",
+    "company": "Landes",
+    "description": "Built data integration pipelines into a corporate Data Lake, designing ETL processes and an AI-based solution for automated information extraction from PDF documents. Created Power BI dashboards for reporting and operational analysis."
   }
 }

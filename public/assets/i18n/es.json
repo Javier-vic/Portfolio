@@ -9,5 +9,23 @@
     "subtitle": "Desarrollador Fullstack",
     "cta": "Contacto",
     "description": "Hola! Soy Javier Victoriano, ingeniero civil en informática. Me especializo en desarrollo backend con Spring Boot, con experiencia previa en Laravel y .NET, y me muevo cómodo en el frontend con Angular y React para dar forma completa a mis proyectos."
+  },
+  "experience": {
+    "heading": "Experiencia"
+  },  
+  "exp1": {
+    "role": "Analista Forense",
+    "company": "Policia de Investigaciones (PDI)",
+    "description": "Levanté y documenté requerimientos junto a usuarios de negocio, diseñando una solución de gestión logística de evidencias. Desarrollé funcionalidades con C#, .NET, Angular y SQL Server, participando en el diseño de bases de datos y la optimización de procesos internos, con documentación funcional y técnica trazable de principio a fin."
+  },
+  "exp2": {
+    "role": "Desarrollador Fullstack",
+    "company": "Drup SpA",
+    "description": "Lideré el desarrollo de un sistema empresarial, a cargo de la arquitectura, el backend, el frontend y la integración de servicios con PHP, Laravel, JavaScript y APIs REST. Retomé un sistema previamente abandonado y lo llevé a producción, reduciendo los errores operativos en un 85%."
+  },
+  "exp3": {
+    "role": "Ingeniero de Datos ",
+    "company": "Landes",
+    "description": "Desarrollé procesos de integración de datos hacia un Data Lake corporativo, diseñando pipelines ETL y una solución de IA para extracción automatizada de información desde documentos PDF. Elaboré dashboards en Power BI para reportería y análisis operacional del área."
   }
 }
