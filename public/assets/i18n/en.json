@@ -27,5 +27,19 @@
     "role": "Data Engineer",
     "company": "Landes",
     "description": "Built data integration pipelines into a corporate Data Lake, designing ETL processes and an AI-based solution for automated information extraction from PDF documents. Created Power BI dashboards for reporting and operational analysis."
+  },
+  "projects": {
+    "heading": "Projects",
+    "inProgress": "In progress",
+    "repoBtn": "View repo",
+    "demoBtn": "View demo"
+  },
+  "proj1": {
+    "title": "FileManiac",
+    "description": "FileManiac is a desktop application for manipulating PDF files: merging, splitting, and converting other formats to PDF, among other features. Since it handles sensitive data, it runs entirely locally — with an embedded Spring Boot backend serving an Angular frontend, with no cloud dependency. Built with Clean Architecture, separating presentation, application, domain, and infrastructure layers."
+  },
+  "proj2": {
+    "title": "Project 2 name",
+    "description": "Brief description of what the project does and what problem it solves."
   }
 }

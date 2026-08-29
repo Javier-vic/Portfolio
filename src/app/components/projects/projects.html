@@ -1,0 +1,36 @@
+<section class="projects" id="projects">
+  <h2 class="projects__heading">{{ 'projects.heading' | translate }}</h2>
+
+  <div class="projects__grid">
+    @for (project of projects; track project.id) {
+      <article class="project-card">
+        @if (project.status === 'in-progress') {
+          <span class="project-card__pill">{{ 'projects.inProgress' | translate }}</span>
+        }
+
+        <h3 class="project-card__title">{{ project.id + '.title' | translate }}</h3>
+        <p class="project-card__description">{{ project.id + '.description' | translate }}</p>
+
+        <div class="project-card__tech">
+          @for (tech of project.techIcons; track tech.name) {
+            <img class="project-card__tech-icon" [src]="tech.icon" [alt]="tech.name" [title]="tech.name">
+          }
+        </div>
+
+        <div class="project-card__actions">
+          <a [href]="project.repoUrl" target="_blank" rel="noopener noreferrer" class="project-card__btn project-card__btn--primary">
+            {{ 'projects.repoBtn' | translate }}
+          </a>
+
+          <!--
+          @if (project.demoUrl) {
+            <a [href]="project.demoUrl" target="_blank" rel="noopener noreferrer" class="project-card__btn project-card__btn--secondary">
+              {{ 'projects.demoBtn' | translate }}
+            </a>
+          }
+          -->
+        </div>
+      </article>
+    }
+  </div>
+</section>
