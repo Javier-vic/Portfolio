@@ -47,5 +47,10 @@
     "text": "Have a project in mind or a job opportunity? Reach out — I'm always open to new conversations.",
     "downloadCv": "Download CV",
     "emailBtn": "Send email"
+  },
+  "footer": {
+    "backToTop": "Back to top",
+    "rights": "All rights reserved.",
+    "madeWith": "Made with Angular"
   }
 }

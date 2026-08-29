@@ -47,5 +47,10 @@
     "text": "¿Tienes un proyecto en mente o una oportunidad laboral? Escríbeme, siempre estoy abierto a nuevas conversaciones.",
     "downloadCv": "Descargar CV",
     "emailBtn": "Enviar email"
+  },
+  "footer": {
+    "backToTop": "Volver arriba",
+    "rights": "Todos los derechos reservados.",
+    "madeWith": "Hecho con Angular"
   }
 }
