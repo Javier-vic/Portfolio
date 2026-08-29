@@ -1,0 +1,15 @@
+<section class="contact" id="contact">
+    <h2 class="contact__heading">{{ 'contact.heading' | translate }}</h2>
+    <p class="contact__text">{{ 'contact.text' | translate }}</p>
+
+    <div class="contact__actions">
+        <a [href]="cvUrl()" download class="contact__btn contact__btn--primary">
+            {{ 'contact.downloadCv' | translate }}
+        </a>
+
+        <a href="mailto:javier.victorianor@gmail.com" class="contact__btn contact__btn--secondary">
+            {{ 'contact.emailBtn' | translate }}
+        </a>
+    </div>
+
+</section>

@@ -41,5 +41,11 @@
   "proj2": {
     "title": "Nombre del proyecto 2",
     "description": "Breve descripción de qué hace el proyecto y qué problema resuelve."
+  },
+  "contact": {
+    "heading": "Hablemos",
+    "text": "¿Tienes un proyecto en mente o una oportunidad laboral? Escríbeme, siempre estoy abierto a nuevas conversaciones.",
+    "downloadCv": "Descargar CV",
+    "emailBtn": "Enviar email"
   }
 }

@@ -41,5 +41,11 @@
   "proj2": {
     "title": "Project 2 name",
     "description": "Brief description of what the project does and what problem it solves."
+  },
+  "contact": {
+    "heading": "Let's talk",
+    "text": "Have a project in mind or a job opportunity? Reach out — I'm always open to new conversations.",
+    "downloadCv": "Download CV",
+    "emailBtn": "Send email"
   }
 }
